@@ -6,7 +6,7 @@ function App() {
   const [count, setCount] = useState(0)
   function getHello() {
     const greet = document.getElementById('greet')
-    fetch(import.meta.env.VITE_API_SERVER + '/api/hello?name=연봉 7천에 뵨을 모셔가셰염')
+    fetch(import.meta.env.VITE_API_SERVER + '/api/hello?name=no biz site, just for coding')
       .then(response => response.json())
       .then(data => greet.innerHTML = JSON.stringify(data))
   }
